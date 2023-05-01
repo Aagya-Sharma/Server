@@ -60,12 +60,10 @@ const register = async (req, res, next) => {
     }
 }
 const login = async (req, res, next) => {
-    console.log("insode login")
     const loginObject = {
         email: req.body.email,
         password: req.body.password
     }
-    console.log(loginObject)
     if(!loginObject.email || !loginObject.password){
         return res.status(500).json("Input all fields")
     }
@@ -89,7 +87,6 @@ const login = async (req, res, next) => {
     }
 
 }
-
 
 
 // const resendVerification = async(req, res, next => {

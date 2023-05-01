@@ -51,6 +51,7 @@ const getUser = async(req, res, next)=>{
       res.status(500).json("No Such User")
      }
 }
+
 const getUserInfo= async (req, res) =>{
   try {
     let token = tokens(req)

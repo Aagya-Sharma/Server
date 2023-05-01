@@ -25,6 +25,9 @@ app.use('/', authorizeRoute)
 const userRoute = require('./Routes/userRoute')
 app.use('/', userRoute)
 
+const reviewRoute = require('./Routes/reviewsRoutes')
+app.use('/',reviewRoute)
+
 const doctorCategoryRoute = require('./Routes/doctorCategoryRouter')
 app.use('/', doctorCategoryRoute)
 

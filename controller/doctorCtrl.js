@@ -95,8 +95,8 @@ const doctorCtrl = {
     updateDoctor: async(req,res)=>{
         try{
             const {title, name, price, description, content, images, category} = req.body;
-            if(!images)
-            return res.status(400).json({msg: "No image upload"})
+            // if(!images)
+            // return res.status(400).json({msg: "No image upload"})
 
             await Doctors.findByIdAndUpdate({_id: req.params.id},{
                 title, name, price, description,content, images, category
